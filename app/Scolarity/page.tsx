@@ -43,10 +43,20 @@ const projects = [
 
 const ProjectsPage = () => {
   return (
-    <div className="">
-      <header className="h-screen flex flex-col justify-center items-center">
+    <div className="min-h-screen flex relative overflow-hidden bg-dotted pt-6 pb-6 sm:pt-8 sm:pb-8">
+      <header className="h-screen w-full flex flex-col justify-center items-center">
         <h1 className="text-xl">Scolarity</h1>
       </header>
+      <div>
+        
+      </div>
+
+      <style>{`
+        .bg-dotted {
+          background: white url('data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23D3D3D3" fill-opacity="0.5"%3E%3Ccircle cx="50" cy="50" r="3"/%3E%3C/g%3E%3C/svg%3E') repeat;
+          background-size: 25px 25px; /* Ajuster la taille comme nécessaire */
+        }
+      `}</style>
     </div>
   );
 };
